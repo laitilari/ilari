@@ -109,6 +109,15 @@ $themes: (
   }
 }
 
+.blue {
+  color: $blue;
+}
+
+.white {
+  color: $white;
+}
+
+
 .footer {
   @include themify($themes) {
     background: themed("backgroundColor");
