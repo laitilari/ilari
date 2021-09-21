@@ -10,7 +10,7 @@ export default () => {
       <Container>
         <Image
           rounded
-          width="400"
+          width="540"
           height="540"
           src={`../../icons/profiili.jpg`}
           alt={"ilari"}
