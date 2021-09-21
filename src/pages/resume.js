@@ -110,7 +110,7 @@ export default ({ data }) => {
             width="250"
             height="300"
             fluid
-            src={`../../icons/cropped.png`}
+            src={`../../icons/cropped.jpg`}
             alt={"profile-photo"}
           />
           <div className="resume-item-text">

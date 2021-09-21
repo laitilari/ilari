@@ -16,7 +16,7 @@ export default ({ data }) => {
           width="250"
           height="250"
           fluid
-          src={`../../icons/cropped.png`}
+          src={`../../icons/cropped.jpg`}
           alt={"profile-photo"}
         />
         {unemployed && (
