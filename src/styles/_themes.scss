@@ -302,3 +302,10 @@ $small: 775px;
     font-weight: bold;
   }
 }
+
+.about-me-image {
+  @media screen and (max-width: $small) {
+    max-width: 20rem;
+    max-height: 20rem;
+  }
+}

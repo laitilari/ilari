@@ -9,6 +9,7 @@ export default () => {
       <PageTitle title="About me" />
       <Container>
         <Image
+          className="about-me-image"
           rounded
           width="540"
           height="540"
