@@ -25,9 +25,7 @@ export default ({ data }) => {
           </p>
         )}
         <Container className="py-0 my-0">
-          <h1
-            className="home-name"
-          >
+          <h1 className="home-name">
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>

@@ -38,7 +38,11 @@ export default () => {
               <div className="resume-item-text-customers">
                 <p>Clients:</p>
                 <div>
-                  <a href="https://www.druid.fi" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.druid.fi"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       width="75"
                       height="75"
@@ -47,7 +51,11 @@ export default () => {
                       alt={"profile-photo"}
                     />
                   </a>
-                  <a href="https://www.vedia.fi/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.vedia.fi/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       width="75"
                       height="75"
@@ -74,7 +82,11 @@ export default () => {
             <p className="resume-stack">{`Stack:
             JavaScript | React | TypeScript | PuppeteerE2E | Python | Scrum Master`}</p>
           </div>
-          <a href="https://www.digitalentconsulting.fi/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.digitalentconsulting.fi/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               roundedCircle
               width="250"
@@ -86,7 +98,11 @@ export default () => {
           </a>
         </div>
         <div className="resume-item">
-          <a href="https://www.tilastokeskus.fi" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.tilastokeskus.fi"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               roundedCircle
               width="250"
@@ -123,7 +139,11 @@ export default () => {
               <div className="resume-item-text-customers">
                 <p>Clients:</p>
                 <div>
-                  <a href="https://www.druid.fi" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.druid.fi"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       width="75"
                       height="75"
@@ -132,7 +152,11 @@ export default () => {
                       alt={"profile-photo"}
                     />
                   </a>
-                  <a href="https://www.vedia.fi/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.vedia.fi/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <Image
                       width="75"
                       height="75"
@@ -150,7 +174,11 @@ export default () => {
           </div>
         </div>
         <div className="resume-item">
-          <a href="https://www.digitalentconsulting.fi/" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.digitalentconsulting.fi/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               roundedCircle
               width="250"
@@ -171,7 +199,11 @@ export default () => {
           </div>
         </div>
         <div className="resume-item">
-          <a href="https://www.tilastokeskus.fi" target="_blank" rel="noreferrer">
+          <a
+            href="https://www.tilastokeskus.fi"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               roundedCircle
               width="250"
@@ -192,6 +224,6 @@ export default () => {
           </div>
         </div>
       </Container>
-    </PageLayout >
+    </PageLayout>
   )
 }
