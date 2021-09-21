@@ -16,8 +16,8 @@ export default ({ data }) => {
       <Container>
         <Image
           rounded
-          width={`${window.screen.availWidth > 525 ? 400 : 200}`}
-          height={`${window.screen.availWidth > 525 ? 540 : 270}`}
+          width="400"
+          height="540"
           src={`../../icons/profiili.jpg`}
           alt={author}
         />

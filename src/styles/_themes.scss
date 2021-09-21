@@ -211,7 +211,7 @@ p {
   }
 }
 
-$small: 550px;
+$small: 775px;
 
 .home-name {
   font-size: 5rem;
@@ -228,6 +228,31 @@ $small: 550px;
   gap: 6rem;
   @media screen and (max-width: $small) {
     gap: 3rem;
+  }
+}
+
+@media screen and (max-width: $small) {
+  .resume-container-desktop {
+    display: none;
+  }
+  .resume-container-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3rem;
+  }
+}
+
+
+@media screen and (min-width: $small) {
+  .resume-container-desktop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 6rem;
+  }
+  .resume-container-mobile {
+    display: none;
   }
 }
 

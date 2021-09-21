@@ -7,15 +7,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 export default ({ data }) => {
   const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
-  // const { dark } = useContext(ThemeContext)
   return (
     <PageLayout>
       <SEO title="Home" />
       <Container className="text-center pt-5 mt-5" fluid>
         <Image
           roundedCircle
-          width={`${window.screen.availWidth > 525 ? 250 : 150}`}
-          height={`${window.screen.availWidth > 525 ? 250 : 150}`}
+          width="250"
+          height="250"
           fluid
           src={`../../icons/cropped.png`}
           alt={"profile-photo"}

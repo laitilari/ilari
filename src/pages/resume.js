@@ -21,8 +21,8 @@ export default ({ data }) => {
       <hr></hr>
       <br></br>
       <br></br>
-      <Container className="resume-container">
-        {window.screen.availWidth > 550 && <><div className="resume-item">
+      <Container className="resume-container-desktop">
+        <div className="resume-item">
           <Image
             roundedCircle
             width="250"
@@ -63,46 +63,48 @@ export default ({ data }) => {
             JavaScript | React | Node | Express | Next | SCSS`}</p>
           </div>
         </div>
-          <div className="resume-item">
-            <div className="resume-item-text">
-              <h2>Senior Consultant</h2>
-              <div>
-                <h4>Digitalent Finland</h4>
-              </div>
-              <p>Full-stack Developer, Scrum Master @KPMG Finland</p>
-              <p className="resume-stack">{`Stack:
+        <div className="resume-item">
+          <div className="resume-item-text">
+            <h2>Senior Consultant</h2>
+            <div>
+              <h4>Digitalent Finland</h4>
+            </div>
+            <p>Full-stack Developer, Scrum Master @KPMG Finland</p>
+            <p className="resume-stack">{`Stack:
             JavaScript | React | TypeScript | PuppeteerE2E | Python | Scrum Master`}</p>
-            </div>
-            <Image
-              roundedCircle
-              width="250"
-              height="300"
-              fluid
-              src={`../../icons/digitalentlogo.png`}
-              alt={"profile-photo"}
-            />
           </div>
-          <div className="resume-item">
-            <Image
-              roundedCircle
-              width="250"
-              height="300"
-              fluid
-              src={`../../icons/tilastokeskuslogo.png`}
-              alt={"profile-photo"}
-            />
-            <div className="resume-item-text">
-              <h2></h2>
-              <h2>Application Specialist</h2>
-              <div>
-                <h4>Statistics Finland</h4>
-              </div>
-              <p>Full-stack development and cloud development</p>
-              <p className="resume-stack">{`Stack:
-            JavaScript | Next | Python | Django | Azure | Node | GraphCMS | Contentful | Cypress | Jasmine`}</p>
+          <Image
+            roundedCircle
+            width="250"
+            height="300"
+            fluid
+            src={`../../icons/digitalentlogo.png`}
+            alt={"profile-photo"}
+          />
+        </div>
+        <div className="resume-item">
+          <Image
+            roundedCircle
+            width="250"
+            height="300"
+            fluid
+            src={`../../icons/tilastokeskuslogo.png`}
+            alt={"profile-photo"}
+          />
+          <div className="resume-item-text">
+            <h2></h2>
+            <h2>Application Specialist</h2>
+            <div>
+              <h4>Statistics Finland</h4>
             </div>
-          </div></>}
-        {window.screen.availWidth <= 550 && <><div className="resume-item">
+            <p>Full-stack development and cloud development</p>
+            <p className="resume-stack">{`Stack:
+            JavaScript | Next | Python | Django | Azure | Node | GraphCMS | Contentful | Cypress | Jasmine`}</p>
+          </div>
+        </div>
+      </Container>
+      <Container className="resume-container-mobile">
+        <div className="resume-item">
           <Image
             roundedCircle
             width="250"
@@ -143,46 +145,45 @@ export default ({ data }) => {
             JavaScript | React | Node | Express | Next | SCSS`}</p>
           </div>
         </div>
-          <div className="resume-item">
-            <Image
-              roundedCircle
-              width="250"
-              height="300"
-              fluid
-              src={`../../icons/digitalentlogo.png`}
-              alt={"profile-photo"}
-            />
-            <div className="resume-item-text">
-              <h2>Senior Consultant</h2>
-              <div>
-                <h4>Digitalent Finland</h4>
-              </div>
-              <p>Full-stack Developer, Scrum Master @KPMG Finland</p>
-              <p className="resume-stack">{`Stack:
+        <div className="resume-item">
+          <Image
+            roundedCircle
+            width="250"
+            height="300"
+            fluid
+            src={`../../icons/digitalentlogo.png`}
+            alt={"profile-photo"}
+          />
+          <div className="resume-item-text">
+            <h2>Senior Consultant</h2>
+            <div>
+              <h4>Digitalent Finland</h4>
+            </div>
+            <p>Full-stack Developer, Scrum Master @KPMG Finland</p>
+            <p className="resume-stack">{`Stack:
             JavaScript | React | TypeScript | PuppeteerE2E | Python | Scrum Master`}</p>
-            </div>
           </div>
-          <div className="resume-item">
-            <Image
-              roundedCircle
-              width="250"
-              height="300"
-              fluid
-              src={`../../icons/tilastokeskuslogo.png`}
-              alt={"profile-photo"}
-            />
-            <div className="resume-item-text">
-              <h2></h2>
-              <h2>Application Specialist & Product Owner</h2>
-              <div>
-                <h4>Statistics Finland</h4>
-              </div>
-              <p>Full-stack development and cloud development</p>
-              <p className="resume-stack">{`Stack:
-            JavaScript | Next | Python | Django | Azure | Node | GraphCMS | Contentful | Cypress | Jasmine`}</p>
+        </div>
+        <div className="resume-item">
+          <Image
+            roundedCircle
+            width="250"
+            height="300"
+            fluid
+            src={`../../icons/tilastokeskuslogo.png`}
+            alt={"profile-photo"}
+          />
+          <div className="resume-item-text">
+            <h2></h2>
+            <h2>Application Specialist</h2>
+            <div>
+              <h4>Statistics Finland</h4>
             </div>
-          </div></>}
-
+            <p>Full-stack development and cloud development</p>
+            <p className="resume-stack">{`Stack:
+            JavaScript | Next | Python | Django | Azure | Node | GraphCMS | Contentful | Cypress | Jasmine`}</p>
+          </div>
+        </div>
       </Container>
     </PageLayout >
   )
