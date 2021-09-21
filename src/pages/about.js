@@ -1,18 +1,15 @@
-import React, { useContext } from "react"
+import React from "react"
 import { PageLayout, PageTitle } from "../components"
 import { Container, Image } from "react-bootstrap"
 import { graphql } from "gatsby"
 import { SEO } from "../utils"
-import ThemeContext from "../utils/theme"
-
 export default ({ data }) => {
-  const { dark } = useContext(ThemeContext)
-
   const { author, occupation, designations } = data.site.siteMetadata
 
   return (
     <PageLayout>
       <SEO title="About Me" />
+      <PageTitle title="About me" />
       <Container>
         <Image
           rounded
@@ -21,7 +18,7 @@ export default ({ data }) => {
           src={`../../icons/profiili.jpg`}
           alt={author}
         />
-        <article className="w-75 m-auto pt-2 text-justify-center">
+        <article className="about-article w-75 m-auto pt-2 text-justify-center">
           <p className="text-center">
             {designations.map((attr, i) => (
               <span key={attr}>
@@ -41,6 +38,9 @@ export default ({ data }) => {
           <p>
             I studied computer science in University of Helsinki and Aalto
             University, Finland.
+          </p>
+          <p>
+            Currently working as a freelance contractor. Contact me via <a href="/">home page</a> links!
           </p>
         </article>
       </Container>

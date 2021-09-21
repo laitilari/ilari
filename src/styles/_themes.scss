@@ -282,3 +282,23 @@ $small: 775px;
 .resume-stack {
   white-space: pre-line;
 }
+
+.skill-container {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  @media screen and (max-width: $small) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 475px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.skill-card {
+  .skill-title {
+    font-weight: bold;
+  }
+}
