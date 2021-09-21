@@ -13,7 +13,6 @@ export default () => {
           roundedCircle
           width="250"
           height="250"
-          fluid
           src={`../../icons/cropped.jpg`}
           alt={"profile-photo"}
         />

@@ -27,9 +27,8 @@ export default () => {
           <Image
             roundedCircle
             width="250"
-            height="300"
-            fluid
-            src={`../../icons/cropped.png`}
+            height="250"
+            src={`../../icons/cropped.jpg`}
             alt={"profile photo"}
           />
           <div className="resume-item-text">
