@@ -30,7 +30,7 @@ export default () => {
             height="300"
             fluid
             src={`../../icons/cropped.png`}
-            alt={"profile-photo"}
+            alt={"profile photo"}
           />
           <div className="resume-item-text">
             <h2>Freelance Developer</h2>
@@ -162,7 +162,7 @@ export default () => {
                       height="75"
                       fluid
                       src={`../../icons/vedialogo.png`}
-                      alt={"profile-photo"}
+                      alt={"vedia"}
                     />
                   </a>
                 </div>
@@ -185,7 +185,7 @@ export default () => {
               height="300"
               fluid
               src={`../../icons/digitalentlogo.png`}
-              alt={"profile-photo"}
+              alt={"digitalent finland"}
             />
           </a>
           <div className="resume-item-text">
@@ -210,7 +210,7 @@ export default () => {
               height="300"
               fluid
               src={`../../icons/tilastokeskuslogo.png`}
-              alt={"profile-photo"}
+              alt={"tilastokeskus"}
             />
           </a>
           <div className="resume-item-text">

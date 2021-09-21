@@ -1,12 +1,10 @@
 import React from "react"
-import { graphql } from "gatsby"
 import { PageLayout } from "../components"
 import { SEO } from "../utils"
 import { Container, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-export default ({ data }) => {
-  const { unemployed, firstName, lastName, occupation } = data.site.siteMetadata
+export default () => {
   return (
     <PageLayout>
       <SEO title="Home" />
@@ -19,18 +17,13 @@ export default ({ data }) => {
           src={`../../icons/cropped.jpg`}
           alt={"profile-photo"}
         />
-        {unemployed && (
-          <p className="mt-2">
-            <b> Hey! I am looking for new opportunities :)</b>
-          </p>
-        )}
         <Container className="py-0 my-0">
           <h1 className="home-name">
-            <span className="first-name">{firstName}</span>&nbsp;
-            <span className="last-name">{lastName}</span>
+            <span className="first-name">Ilari</span>&nbsp;
+            <span className="last-name">Laitinen</span>
           </h1>
           <p>
-            <i>{occupation}</i>
+            <i>Software Engineer</i>
           </p>
         </Container>
         <hr className="my-3 w-25" />
@@ -80,16 +73,3 @@ export default ({ data }) => {
     </PageLayout>
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        unemployed
-        firstName
-        lastName
-        occupation
-      }
-    }
-  }
-`
