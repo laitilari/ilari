@@ -14,8 +14,8 @@ export default ({ data }) => {
       <Container className="text-center pt-5 mt-5" fluid>
         <Image
           roundedCircle
-          width="150"
-          height="150"
+          width={`${window.screen.availWidth > 525 ? 250 : 150}`}
+          height={`${window.screen.availWidth > 525 ? 250 : 150}`}
           fluid
           src={`../../icons/cropped.png`}
           alt={"profile-photo"}
@@ -27,33 +27,17 @@ export default ({ data }) => {
         )}
         <Container className="py-0 my-0">
           <h1
-            style={{
-              fontSize: "5rem",
-              color: "black",
-            }}
+            className="home-name"
           >
             <span className="first-name">{firstName}</span>&nbsp;
             <span className="last-name">{lastName}</span>
           </h1>
           <p>
-            <i>
-              {occupation}
-            </i>
+            <i>{occupation}</i>
           </p>
         </Container>
         <hr className="my-3 w-25" />
         <div className="d-md-inline-flex icons-container">
-          <a
-            href="https://github.com/laitilari/ilari"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={["fab", "github"]}
-              className="icons github"
-              title="Github"
-            />
-          </a>
           <a
             href="https://www.linkedin.com/in/ilari-laitinen/"
             target="_blank"
@@ -63,6 +47,17 @@ export default ({ data }) => {
               icon={["fab", "linkedin"]}
               className="icons linkedin"
               title="LinkedIn"
+            />
+          </a>
+          <a
+            href="https://github.com/laitilari/ilari"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon
+              icon={["fab", "github"]}
+              className="icons github"
+              title="Github"
             />
           </a>
           <a

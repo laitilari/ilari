@@ -78,10 +78,16 @@ body {
   margin: 0 1rem;
 }
 
+$small: 550px;
+
 .icons {
   font-size: 3.75rem;
   margin: 0.1rem;
   color: $gray-600;
+
+  @media screen and (max-width: $small) {
+    font-size: 2rem;
+  }
 }
 
 .brand-icon {

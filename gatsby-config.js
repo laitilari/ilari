@@ -13,15 +13,19 @@ module.exports = {
     lastName: `Laitinen`,
     description: `Ilari Laitinen's personal site`,
     occupation: `Software Engineer`,
-    keywords: [`Ilari`, `Laitinen`, `Personal`, `Blog`, `Resume`, `Projects`, `Work`],
+    keywords: [
+      `Ilari`,
+      `Laitinen`,
+      `Personal`,
+      `Blog`,
+      `Resume`,
+      `Projects`,
+      `Work`,
+    ],
     siteUrl:
       process.env.URL || process.env.DEPLOY_URL || `http://localhost:8000`,
     unemployed: false,
-    designations: [
-      `Software Engineer`,
-      `Full-stack Developer`,
-      `MSc. Tech`,
-    ],
+    designations: [`Software Engineer`, `Full-stack Developer`, `MSc. Tech`],
     readingList: [
       {
         title: `Sapiens: A Brief History of Humankind`,

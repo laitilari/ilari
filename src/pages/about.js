@@ -8,21 +8,16 @@ import ThemeContext from "../utils/theme"
 export default ({ data }) => {
   const { dark } = useContext(ThemeContext)
 
-  const {
-    author,
-    occupation,
-    designations,
-  } = data.site.siteMetadata
+  const { author, occupation, designations } = data.site.siteMetadata
 
   return (
     <PageLayout>
       <SEO title="About Me" />
-      <PageTitle className={`${dark ? "yellow" : "blue"}`} title="Ilari Laitinen" />
       <Container>
         <Image
           rounded
-          width="400"
-          height="540"
+          width={`${window.screen.availWidth > 525 ? 400 : 200}`}
+          height={`${window.screen.availWidth > 525 ? 540 : 270}`}
           src={`../../icons/profiili.jpg`}
           alt={author}
         />
@@ -37,13 +32,15 @@ export default ({ data }) => {
           </p>
           <p className="mt-4 pt-2">
             I am a&nbsp;
-            {occupation} with 4-5 years of work experience.</p>
-          <p className="">
-            I have worked in public and private sectors as a developer in different roles.
+            {occupation} with 4-5 years of work experience.
           </p>
-          <p className="">
-            I studied computer science in University of Helsinki and
-            Aalto University, Finland.
+          <p>
+            Experience in public and private sectors as developer in
+            versatile roles.
+          </p>
+          <p>
+            I studied computer science in University of Helsinki and Aalto
+            University, Finland.
           </p>
         </article>
       </Container>
