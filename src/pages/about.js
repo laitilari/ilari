@@ -18,7 +18,7 @@ export default () => {
         />
         <article className="about-article w-75 m-auto pt-2 text-justify-center">
           <p className="mt-4 pt-2">
-            I am software engineer with 4-5 years of work experience.
+            I am software engineer with 5 years of work experience.
           </p>
           <p>
             Experience in public and private sectors as developer in versatile
